@@ -5,6 +5,6 @@
     "cheerio": "^1.0.0-rc.12",
     "bottleneck": "^2.19.5",
     "form-data": "^4.0.0",
-    "node-fetch": "^3.4.1"
+    "node-fetch": "^3.3.2"
   }
 }
