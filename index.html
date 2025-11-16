@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniraj Result Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>📚 Uniraj Result Checker</h1>
+
+    <!-- Category Section -->
+    <div class="section">
+        <h2>Select Result Category</h2>
+        <div id="categoryList">
+            <button onclick="openCategory('ug')">UG Results</button>
+            <button onclick="openCategory('pg')">PG Results</button>
+            <button onclick="openCategory('other')">Other Results</button>
+        </div>
+    </div>
+
+    <!-- Roll + DOB Form -->
+    <div id="formSection" class="section hidden">
+        <h2>Enter Details</h2>
+        <input type="text" id="rollNo" placeholder="Enter Roll Number">
+        <input type="date" id="dob">
+        <button onclick="fetchResult()">Check Result</button>
+    </div>
+
+    <!-- Result Output -->
+    <div id="resultSection" class="section hidden">
+        <h2>Result</h2>
+        <pre id="resultBox">Loading...</pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
